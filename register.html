@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>StayNear-Register</title>
+        <style>
+            body {
+                background: #fff8f6;
+            }
+            #logo {
+                display: flex;
+                align-items: center;
+            }
+            #logo svg {
+                height: 50px;
+                width: 55px;
+            }
+            #form {
+                text-align: center;
+                background-color: #ffffff;
+                padding: 30px 25px;
+                border-radius: 12px;
+                box-shadow: 5px 5px 10px gray;
+                width: 450px;
+                margin: 40px auto;
+            }
+            #form form {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
+            .form-row {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 15px;
+                width: 100%;
+            }
+            #form form label {
+                font-weight: bold;
+
+                font-size: 1.1rem;
+                width: 130px;
+                text-align: left;
+            }
+            #form form input[type="text"],
+            #form form input[type="tel"],
+            #form form input[type="email"],
+            #form form input[type="password"],
+            #form form select {
+                flex: 1;
+                height: 36px;
+                padding: 0 10px;
+                border: 1px solid #cbd5e1;
+                border-radius: 8px;
+                font-size: 0.95rem;
+                outline: none;
+                text-align: left;
+            }
+            input[type="text"] {
+                height: 30px;
+                width: 200px;
+            }
+            input[type="submit"] {
+                width: 250px;
+                height: 30px;
+                background-color: #6d6dd9;
+                color: white;
+                display: block;
+                margin: auto;
+                border-radius: 10px;
+            }
+            input[type="submit"]:hover {
+                transform: scale(1.1);
+                transition: 0.2s ease;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+                <path
+                    fill-rule="evenodd"
+                    d="M10 4.5c1.215 0 2.417.055 3.604.162a.68.68 0 0 1 .615.597c.124 1.038.208 2.088.25 3.15l-1.689-1.69a.75.75 0 0 0-1.06 1.061l2.999 3a.75.75 0 0 0 1.06 0l3.001-3a.75.75 0 1 0-1.06-1.06l-1.748 1.747a41.31 41.31 0 0 0-.264-3.386 2.18 2.18 0 0 0-1.97-1.913 41.512 41.512 0 0 0-7.477 0 2.18 2.18 0 0 0-1.969 1.913 41.16 41.16 0 0 0-.16 1.61.75.75 0 1 0 1.495.12c.041-.52.093-1.038.154-1.552a.68.68 0 0 1 .615-.597A40.012 40.012 0 0 1 10 4.5ZM5.281 9.22a.75.75 0 0 0-1.06 0l-3.001 3a.75.75 0 1 0 1.06 1.06l1.748-1.747c.042 1.141.13 2.27.264 3.386a2.18 2.18 0 0 0 1.97 1.913 41.533 41.533 0 0 0 7.477 0 2.18 2.18 0 0 0 1.969-1.913c.064-.534.117-1.071.16-1.61a.75.75 0 1 0-1.495-.12c-.041.52-.093 1.037-.154 1.552a.68.68 0 0 1-.615.597 40.013 40.013 0 0 1-7.208 0 .68.68 0 0 1-.615-.597 39.785 39.785 0 0 1-.25-3.15l1.689 1.69a.75.75 0 0 0 1.06-1.061l-2.999-3Z"
+                    clip-rule="evenodd" />
+            </svg>
+            <span>StayNear</span>
+        </div>
+        <h1 style="text-align: center">Register Yourself</h1>
+        <br />
+        <div id="form">
+            <form>
+                <div class="form-row">
+                    <label for="userFname">First Name:</label>
+                    <input type="text" id="userFname" placeholder="Enter your First name" />
+                </div>
+                <div class="form-row">
+                    <label for="userLname">Last Name:</label>
+                    <input type="text" id="userLname" placeholder="Enter your Last name" />
+                </div>
+                <div class="form-row">
+                    <label for="phonenum">Phone Number:</label>
+                    <input type="tel" id="phonenum" placeholder="Enter your number" />
+                </div>
+                <div class="form-row">
+                    <label for="useremail">Email:</label>
+                    <input type="email" id="useremail" placeholder="Enter your email" />
+                </div>
+                <div class="form-row">
+                    <label for="state">State:</label>
+                    <input type="text" id="state" placeholder="Enter your Current State" />
+                </div>
+                <div class="form-row">
+                    <label for="city">City</label>
+                    <input type="text" id="city" placeholder="Enter your Current City" />
+                </div>
+                <div class="form-row">
+                    <label for="occ">Occupation</label>
+                    <select id="occ">
+                        <option>Student</option>
+                        <option>Working</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="working">Shift:</label>
+                    <select id="working">
+                        <option>Morning Shift</option>
+                        <option>Night Shift</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="pass">Password:</label>
+                    <input type="password" id="pass" placeholder="Enter your Password" required />
+                </div>
+                <div class="form-row">
+                    <input type="submit" value="Register" />
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
